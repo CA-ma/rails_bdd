@@ -3,8 +3,4 @@ class Article < ApplicationRecord
     validates :content, presence: true
 end
 
-class ArticlesController < ApplicationController
-    def index
-      @articles = Article.all
-    end
-end
+
