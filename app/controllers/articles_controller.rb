@@ -16,6 +16,7 @@ class ArticlesController < ApplicationController
    
     if @article.save
       redirect_to @article
+      flash[:notice] = 'Article was successfully posted.'
     else
       render 'new'
     end

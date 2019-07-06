@@ -11,8 +11,8 @@ Scenario: [Success Path] Successfully create an article
     When I fill in "Title" with "New article title"
     And I fill in "Content" with "New article content"
     And I click "Post new article"
-    Then I should be on "New article title" page
-    And I should see "Article was successfully created."
+    #Then I should be on "New article title" page
+    Then I should see "Article was successfully posted."
     And I should see "New article title"
     And I should see "New article content"
 

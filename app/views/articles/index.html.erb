@@ -5,7 +5,6 @@
 
 
 <% @articles.each do |article| %>
-    <hr></hr>
-    <h3><%= link_to article.title, article_path(article) %></h3>
-    <p><%= article.content %></p>
+    <h3><%=article.id%>.  <%= link_to article.title, article_path(article) %></h3>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= article.content %></p>
 <% end %>
