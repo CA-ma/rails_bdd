@@ -16,7 +16,3 @@ When("I fill in {string} with {string}") do |field, content|
   fill_in field, with: content
 end
 
-Then("I should be on Learning Rails 5 page")
-  pending #visit page
-end
-
