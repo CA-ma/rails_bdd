@@ -19,9 +19,9 @@ Scenario: [Success Path] Successfully create an article
 Scenario: [Failure Path] Publisher doesn't enter a title for the article 
     When I fill in "Content" with "New article content"
     And I click "Save Article"
-    Then I should see "A new article must include a title"
+    Then I should see "Title can't be blank"
 
 Scenario: [Failure Path] Publisher doesn't enter content for the article
     When I fill in "Title" with "New article title"
     And I click "Save Article"
-    Then I should see "A new article must include content"
+    Then I should see "Content can't be blank"
