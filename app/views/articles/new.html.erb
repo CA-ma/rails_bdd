@@ -1,4 +1,7 @@
-<h1>Submit a new article</h1>
+<h3> <%= link_to 'Articles', root_path %> -- <%= link_to 'Post new article', new_article_path %> </h3>
+<hr></hr>
+<h1>Post a new article</h1>
+<h3>Please use an appropriate title and include poignant content.</h3>
 
 
 <%= form_with scope: :article, url: articles_path, local: true do |form| %>

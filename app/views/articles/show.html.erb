@@ -1,9 +1,11 @@
-<p>
-    <strong>Title:</strong>
+<h3> <%= link_to 'Articles', root_path %> -- <%= link_to 'Post new article', new_article_path %> </h3>
+<hr></hr>
+
+<h1> Article <%=@article.id%> </h1>
+
+<h3>
     <%= @article.title %>
-</p>
+</h3>
 <p>
-    <strong>Text:</strong>
     <%= @article.content %>
 </p>
-<%= link_to 'Back', articles_path %>
