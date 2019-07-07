@@ -2,6 +2,6 @@ FactoryBot.define do
   factory :comment do
     commenter { "MyString" }
     body { "MyText" }
-    article { nil }
+    article { Article.new }
   end
 end
