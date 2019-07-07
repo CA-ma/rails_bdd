@@ -22,6 +22,9 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def edit
+  end
+
   private
 
   def article_params

@@ -16,6 +16,7 @@ Scenario: [Success path] Edit an article
     And I fill in "Title" with "This is a new article title"
     And I fill in "Content" with "This is new article content"
     And I click "Save Article"
+    Then I should be on "This is a new article title" page
     And I should see "Article was successfully posted."
     And I should see "This is a new article title"
     And I should see "This is new article content"
