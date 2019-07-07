@@ -15,12 +15,22 @@ Scenario: [Success path] Edit an article
     When I click "Edit"
     And I fill in "Title" with "This is a new article title"
     And I fill in "Content" with "This is new article content"
-    And I click "Save Article"
+    And I click "Update Article"
     Then I should be on "This is a new article title" page
-    And I should see "Article was successfully posted."
+    And I should see "Article was successfully updated."
     And I should see "This is a new article title"
     And I should see "This is new article content"
 
-#Scenario: [Failure path] Article is not changed?
+Scenario: [Failure Path] Publisher doesn't enter a title for the article edit
+    When I click "Edit"
+    And I fill in "Title" with " "
+    And I fill in "Content" with "This is new article content"
+    And I click "Update Article"
+    Then I should see "Title can't be blank"
 
-#Scenario: [Failure path] Article is deleted?
+Scenario: [Failure Path] Publisher doesn't enter content for the article edit
+    When I click "Edit"
+    And I fill in "Title" with "This is a new article title"
+    And I fill in "Content" with " "
+    And I click "Update Article"
+    Then I should see "Content can't be blank"
