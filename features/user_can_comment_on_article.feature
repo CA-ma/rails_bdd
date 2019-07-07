@@ -14,9 +14,11 @@ Background:
 Scenario: [Happy path] User leaves a comment
     When I click "Show"
     And I fill in "Commenter" with "Mr. Commenter"
+    And I fill in "Email" with "commenter@gmail.com"
     And I fill in "Body" with "This is a comment"
     And I click "Create Comment"
     Then I should see "Mr. Commenter"
+    And I should see "commenter@gmail.com"
     And I should see "This is a comment"
     #And I should not see "There are no comments for this article."
 
