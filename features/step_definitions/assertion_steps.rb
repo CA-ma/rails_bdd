@@ -4,5 +4,5 @@ end
 
 Then("I should be on {string} page") do |page|
     article = Article.find_by(title: page)
-    expect(current_path).to eq articles_path(article)
+    expect(current_path).to eq article_path(article)
 end
