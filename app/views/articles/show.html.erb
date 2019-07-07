@@ -5,10 +5,19 @@
 <hr></hr>
 
 <h3>
-    Title: <%= @article.title %>
+    <%= @article.title %>
 </h3>
 <p>
-    Content: <%= @article.content %>
+    <%= @article.content %>
 </p>
+<p>&nbsp;</p> 
 
+<h3>Comments</h3>
+<% @article.comments.each do |comment| %>
+  <p>
+    <%= comment.commenter %>: 
+    <%= comment.body %>
+  </p>
+<% end %>
+<hr></hr>
 <%= render 'comment_form'%>
