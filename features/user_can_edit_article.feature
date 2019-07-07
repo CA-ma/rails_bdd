@@ -11,7 +11,7 @@ Background:
     And I click "Create Article"
     And I click "Articles"
 
-Scenario: [Success path] Edit an article
+Scenario: [Happy path] Edit an article
     When I click "Edit"
     And I fill in "Title" with "This is a new article title"
     And I fill in "Content" with "This is new article content"
@@ -21,14 +21,14 @@ Scenario: [Success path] Edit an article
     And I should see "This is a new article title"
     And I should see "This is new article content"
 
-Scenario: [Failure Path] Publisher doesn't enter a title for the article edit
+Scenario: [Sad Path] Publisher doesn't enter a title for the article edit
     When I click "Edit"
     And I fill in "Title" with " "
     And I fill in "Content" with "This is new article content"
     And I click "Update Article"
     Then I should see "Title can't be blank"
 
-Scenario: [Failure Path] Publisher doesn't enter content for the article edit
+Scenario: [Sad Path] Publisher doesn't enter content for the article edit
     When I click "Edit"
     And I fill in "Title" with "This is a new article title"
     And I fill in "Content" with " "

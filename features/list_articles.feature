@@ -3,7 +3,7 @@ Feature: List articles on the landing page
   When I visit the landing page of the application
   I would like to see a list of all articles
 
-Scenario: View list of articles on the landing page
+Scenario: [Happy path] View list of articles on the landing page
   Given the following articles exists
       | title                | content                          |
       | A breaking news item | Some really breaking action      |
