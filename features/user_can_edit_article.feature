@@ -8,7 +8,7 @@ Background:
     When I click "Post new article"
     When I fill in "Title" with "New article title"
     And I fill in "Content" with "New article content"
-    And I click "Save Article"
+    And I click "Create Article"
     And I click "Articles"
 
 Scenario: [Success path] Edit an article

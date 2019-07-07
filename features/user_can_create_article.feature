@@ -10,7 +10,7 @@ Background:
 Scenario: [Success Path] Successfully create an article
     When I fill in "Title" with "New article title"
     And I fill in "Content" with "New article content"
-    And I click "Save Article"
+    And I click "Create Article"
     Then I should be on "New article title" page
     And I should see "Article was successfully posted."
     And I should see "New article title"
@@ -18,10 +18,10 @@ Scenario: [Success Path] Successfully create an article
 
 Scenario: [Failure Path] Publisher doesn't enter a title for the article 
     When I fill in "Content" with "New article content"
-    And I click "Save Article"
+    And I click "Create Article"
     Then I should see "Title can't be blank"
 
 Scenario: [Failure Path] Publisher doesn't enter content for the article
     When I fill in "Title" with "New article title"
-    And I click "Save Article"
+    And I click "Create Article"
     Then I should see "Content can't be blank"
