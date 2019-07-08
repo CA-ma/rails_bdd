@@ -20,18 +20,3 @@ Scenario: [Happy path] User leaves a comment
     Then I should see "Mr. Commenter"
     And I should see "commenter@gmail.com"
     And I should see "This is a comment"
-    #And I should not see "There are no comments for this article."
-
-Scenario: [Sad path] User does not leave name
-    When I click "Show"
-    And I fill in "Commenter" with " "
-    And I fill in "Body" with "This is a comment"
-    And I click "Create Comment"
-    Then I should see "Commenter can't be blank"
-
-Scenario: [Sad path] User does not leave comment
-    When I click "Show"
-    And I fill in "Commenter" with "Mr. Commenter"
-    And I fill in "Body" with " "
-    And I click "Create Comment"
-    Then I should see "Comment can't be blank"
