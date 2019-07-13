@@ -5,7 +5,6 @@ I want to log in to give me permission to view articles.
 
     Background:
         When I visit the site
-        etc...
 
     Scenario: [Happy Path] User logs into the site with a username and password
         When I click "Login"

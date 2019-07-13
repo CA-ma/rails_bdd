@@ -11,6 +11,8 @@
 
   <body>
     <%= notice || alert %>
+    <h3> <%= link_to 'Articles home', root_path %> -- <%= link_to 'Post new article', new_article_path %> -- <%= link_to 'Login' %></h3>
+    <hr></hr>
     <%= yield %>
   </body>
 </html>
