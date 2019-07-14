@@ -12,12 +12,19 @@ I want to log in to give me permission to view articles.
         And I click "Sign up"
         And I click "Logout"
 
-    Scenario: [Happy Path] User logs into the site with a username and password
+    Scenario: [Happy Path] User logs into the site with a username and password, makes an article, then cannot see it when logged out.
         When I click "Login"
         And I fill in "Email" with "useremail@email.com"
         And I fill in "Password" with "userpassword"
         And I click "Log in"
-        Then I should see "Signed in successfully."
+        And I click "New Post"
+        And I fill in "Title" with "This is a title."
+        And I fill in "Content" with "This is the content of an article."
+        And I click "Create Article"
+        And I click "Home"
+        And I click "Logout"
+        Then I should not see "This is a title."
+        And I should not see "This is the content of an article."
 
     Scenario: [Sad Path] User submits incorrect username and password combination - missing username
         When I click "Login"
