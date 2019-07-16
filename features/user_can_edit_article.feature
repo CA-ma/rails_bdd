@@ -4,12 +4,17 @@ Feature: User can edit articles
     I would like to be able to edit my articles.
 
 Background:
-    Given I visit the landing page
-    When I click "Post new article"
-    When I fill in "Title" with "New article title"
+    Given I visit the landing page    
+    And I click "Sign Up"
+    And I fill in "Email" with "useremail@email.com"
+    And I fill in "Password" with "userpassword"
+    And I fill in "Password confirmation" with "userpassword"
+    And I click "Sign up"
+    When I click "New Post"
+    And I fill in "Title" with "New article title"
     And I fill in "Content" with "New article content"
     And I click "Create Article"
-    And I click "Articles"
+    And I click "Home"
 
 Scenario: [Happy path] Edit an article
     When I click "Edit"

@@ -5,7 +5,7 @@ Feature: Create articles
 
 Background:
     Given I visit the landing page
-    When I click "Post new article"
+    When I click "New Post"
 
 Scenario: [Happy Path] Successfully create an article
     When I fill in "Title" with "New article title"
