@@ -1,44 +1,21 @@
-# Challenge: Rails blog - an article publishing site 
-
-## Table of contents
-* Summary
-* Project goals
-* Project setup
-* Testing
-* Authors
-* Acknowledgements
----
+# Full Stack Application: Article publishing site 
+Developed and documented by,
+* Aubain, Max - [Github](https://github.com/CA-ma)
 
 ## Summary
-An application containing the fundamental functionality of a blog is implemented with the Ruby on Rails development framework in this repository.  The application is tested with feature tests and unit tests using Cucumber and Rspec.
+**Front end**: HTML and CSS.<br>
+**Back end**: Ruby on Rails.<br>
+**Testing**: Cucumber feature test and Rspec unit test.
 
-The emphasis for this project is in the development of the backend to fully realize the power of the Rails framework.  Standard models for Article and Comments are used in a nested fashion to create a blog architecture that is intuitive and easy to modify with create, edit, and delete article functionality.
+This repository contains a [Ruby on Rails](https://rubyonrails.org/) application that employs the creation, editing, deleting, and listing of articles in a blog-style format.  Users (can log in?) and leave comments on articles?. Feature tests written drafted with Behavioral Driven Design (BDD) techniques drive the development process and unit tests are used to verify the functionality of the models.  Feature testing is accomplished with the [Cucumber](https://cucumber.io/) testing framework and unit tests utilize the [Rspec](https://rspec.info/) gem.
 
----
-## Project goals
-The goals for this challenge are three-fold:
-1. Develop application using a test-driven design (TDD) work flow.  Specifically, I use the Acceptance Unit Test (AUT) flow.
-2. Implement backend models and controllers that explore the full range of Create, Read, Update, Destroy (CRUD) data manipulation.
-3. Create a basic blog user interface.
----
-## Project setup
-* Ruby version
-* System dependencies
-* Configuration
-* Deployment instructions
-* User stories
----
-## Testing
-* Database creation
-* Database initialization
-* How to run the test suite
----
-## Authors
-* [Max Aubain](https://maxaubain.github.io) - [Github](https://github.com/CA-ma)
----
+Those of you familiar with Rails will probably recognize this application from the [Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) guide, which is somewhat of a Rite of Passage for new developers.  This is my 'go' of it, with a heavy emphasis on acceptance testing, BDD, and applying each aspect of the Create, Read, Update, and Destroy (CRUD) data management flow.
+
+## Deployment and UI
+https://rails-articles-demo.herokuapp.com/
+
 ## Acknowledgements
-* Thank you to Craft Academy in Stockholm, Sweden for crafting this challenge and coach support.
-* Exemplary demos from [Ruby on Rails Guides](https://guides.rubyonrails.org/getting_started.html).
----
+Thank you to [Craft Academy](https://craftacademy.se/) in Stockholm, Sweden for crafting this challenge, and for the exemplary demos in the [Ruby on Rails Guides](https://guides.rubyonrails.org/getting_started.html).
+
 
 
