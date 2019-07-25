@@ -4,6 +4,9 @@ in order to enjoy using the site,
 I want each page to have useful page headers, layouts centered on the screen, and a splash page."
 
   Background: Visit the site
+    Given the following articles exists
+      | title                | content                          |
+      | A breaking news item | Some really breaking action      |
     When I visit the landing page
     And I should see "Home"
     And I should see "Sign Up"
@@ -15,6 +18,7 @@ I want each page to have useful page headers, layouts centered on the screen, an
     And I fill in "Password confirmation" with "userpassword"
     And I click "Sign up"
 
+
   Scenario: Visit the home page
     Then I should see "Articles feed"
     And I should see "Find all the latest articles right here."
@@ -25,9 +29,9 @@ I want each page to have useful page headers, layouts centered on the screen, an
     And I should see "Please use a specific title and include poignant content. Whatever you like, really!"
 
   Scenario: Show an existing post with comments
-    When I click "See comments"
+    When I click "Comments"
     Then I should see "Published article"
-    And I should see "Read a comment.  Leave a comment.  Please be nice."
+    And I should see "Read a comment. Leave a comment. Please be nice."
   
   Scenario: Edit an existing post
     When I click "Edit"

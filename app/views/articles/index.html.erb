@@ -12,7 +12,7 @@
   <% @articles.each do |article| %>
     <h3> <strong><%=article.title%></strong> </h3>
     <p><%= article.content %></p>
-    <p><%= link_to 'Show', article_path(article) %> &nbsp; <%= link_to 'Edit', edit_article_path(article)%> &nbsp; <%= link_to 'Delete', article_path(article), method: :delete%></p>
+    <p><%= link_to 'Comments', article_path(article) %> &nbsp; <%= link_to 'Edit', edit_article_path(article)%> &nbsp; <%= link_to 'Delete', article_path(article), method: :delete%></p>
     <p>&nbsp;</p>
   <% end %>
 <% else%>
