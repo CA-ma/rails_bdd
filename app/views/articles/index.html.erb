@@ -11,21 +11,24 @@
   </div>
 </div>
 
+<a id="view_articles">
+  <div class="header">
+    <h1>Articles feed</h1>
+    <h3>Find all the latest articles right here.</h3>
+  </div>
 
-<div class="header">
-  <h1>Articles feed</h1>
-  <h3>Find all the latest articles right here.</h3>
-</div>
-
-<% if user_signed_in?%>
-  <% @articles.each do |article| %>
-    <div class="article">
-      <h3> <strong><%=article.title%></strong> </h3>
-      <p><%= article.content %></p>
-      <p><%= link_to 'Comments', article_path(article) %> &nbsp; <%= link_to 'Edit', edit_article_path(article)%> &nbsp; <%= link_to 'Delete', article_path(article), method: :delete%></p>
-      <p>&nbsp;</p>
-    </div>
-  <% end %>
-<% else%>
-  <p> You must be logged in to view articles. </p>
-<% end %>
+  <div>
+    <% if user_signed_in?%>
+      <% @articles.each do |article| %>
+        <div class="article">
+          <h3> <strong><%=article.title%></strong> </h3>
+          <p><%= article.content %></p>
+          <p><%= link_to 'Comments', article_path(article) %> &nbsp; <%= link_to 'Edit', edit_article_path(article)%> &nbsp; <%= link_to 'Delete', article_path(article), method: :delete%></p>
+          <p>&nbsp;</p>
+        </div>
+      <% end %>
+    <% else%>
+      <p> You must be logged in to view articles. </p>
+    <% end %>
+  </div>
+</a>
