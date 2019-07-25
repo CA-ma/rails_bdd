@@ -5,6 +5,11 @@ Feature: Create articles
 
   Background:
     Given I visit the landing page
+    And I click "Sign Up"
+    And I fill in "Email" with "useremail@email.com"
+    And I fill in "Password" with "userpassword"
+    And I fill in "Password confirmation" with "userpassword"
+    And I click "Sign up"
     When I click "New Post"
 
   Scenario: [Happy Path] Successfully create an article
