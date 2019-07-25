@@ -22,7 +22,7 @@ I want each page to have useful page headers, layouts centered on the screen, an
   Scenario: Make a new post
     When I click "Create"
     Then I should see "Create and post a new article"
-    And I should see "Please use a specific title and include poignant content.  Whatever you like, really!"
+    And I should see "Please use a specific title and include poignant content. Whatever you like, really!"
 
   Scenario: Show an existing post with comments
     When I click "See comments"
