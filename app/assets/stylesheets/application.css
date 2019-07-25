@@ -8,22 +8,22 @@ body {
 }
 
 .navbar_left {
-    flex-grow: 1;
-  /* border: red solid 1px; */
+  width: 25vw;
+  border: red solid 1px;
   display: flex;
   justify-content: baseline;
 }
 
 .navbar_center {
-  flex-grow: 1;
-  /* border: yellow solid 1px; */
+  width: 50vw;
+  border: yellow solid 1px;
   display: flex;
   justify-content: center;
 }
 
 .navbar_right {
-  flex-grow: 1;
-  /* border: green solid 1px; */
+  width: 25vw;
+  border: green solid 1px;
   display: flex;
   justify-content: flex-end;
 }
@@ -38,8 +38,9 @@ body {
 .navbar_link {
   padding: 10px 10px 10px 10px;
   font-size: 20px;
-  /* border: black dashed 1px; */
+  border: black dashed 1px;
   text-align: center;
+  min-width: 100px;
 }
 
 .navbar_link a {
