@@ -48,7 +48,7 @@ $ bundle exec cucumber features/name_of_feature_test_file.feature
 
 Some of the gems in the [`Gemfile`](/Gemfile) chosen for this project are not standard with the default scaffolding of a Rails project.  These include,
 * `gem 'cucumber-rails'`  =>  Feature testing with Cucumber
-* `gem 'rspec-rails'`  =>  Unit testing with Rspec
+* `gem 'rspec-rails'`, `  gem 'factory_bot_rails'`, and `gem 'shoulda-matchers'`  =>  Unit testing with Rspec
 * `gem 'devise'`  =>  User authentication with Devise
 * `gem 'pry-byebug'`  =>  Debugging tool
 
