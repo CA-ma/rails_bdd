@@ -1,10 +1,10 @@
 Feature: User can comment on article
-    As a visitor of the article site,
-    To have a conversation about an article,
-    I want to be able to leave a comment.
+  "As a visitor of the article site,
+  To have a conversation about an article,
+  I want to be able to leave a comment."
 
-Background: 
-    Given I visit the landing page    
+  Background:
+    Given I visit the landing page
     And I click "Sign Up"
     And I fill in "Email" with "useremail@email.com"
     And I fill in "Password" with "userpassword"
@@ -17,7 +17,7 @@ Background:
     And I click "Home"
 
 
-Scenario: [Happy path] User leaves a comment
+  Scenario: [Happy path] User leaves a comment
     When I click "Show"
     And I fill in "Commenter" with "Mr. Commenter"
     And I fill in "Email" with "commenter@gmail.com"

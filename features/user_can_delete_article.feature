@@ -1,10 +1,10 @@
 Feature: User can delete article
-    As a publisher,
-    To keep the list of articles current,
-    I want to delete old articles.
+  "As a publisher,
+  To keep the list of articles current,
+  I want to delete old articles."
 
-Background:
-    Given I visit the landing page    
+  Background:
+    Given I visit the landing page
     And I click "Sign Up"
     And I fill in "Email" with "useremail@email.com"
     And I fill in "Password" with "userpassword"
@@ -16,7 +16,7 @@ Background:
     And I click "Create Article"
     And I click "Home"
 
-Scenario: [Happy path] Create and delete and article
+  Scenario: [Happy path] Create and delete and article
     When I click "Home"
     And I click "Delete"
     Then I should not see "New article title"

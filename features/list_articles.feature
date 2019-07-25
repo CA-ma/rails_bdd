@@ -1,10 +1,10 @@
 Feature: List articles on the landing page
-  As a visitor,
-  When I visit the landing page of the application
-  I would like to see a list of all articles
+    "As a visitor,
+    When I visit the landing page of the application,
+  I would like to see a list of all articles."
 
-Scenario: [Happy path] View list of articles on the landing page
-  Given the following articles exists
+  Scenario: [Happy path] View list of articles on the landing page
+    Given the following articles exists
       | title                | content                          |
       | A breaking news item | Some really breaking action      |
       | Learn Rails 5        | Build awesome rails applications |
