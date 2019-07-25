@@ -9,10 +9,12 @@
 <hr></hr>
 
 <% if user_signed_in?%>
-    <% @articles.each do |article| %>
-        <h3> <strong><%=article.title%></strong> </h3>
-        <p><%= article.content %></p>
-        <p><%= link_to 'Show', article_path(article) %> &nbsp; <%= link_to 'Edit', edit_article_path(article)%> &nbsp; <%= link_to 'Delete', article_path(article), method: :delete%></p>
-        <p>&nbsp;</p>
-    <% end %>
+  <% @articles.each do |article| %>
+    <h3> <strong><%=article.title%></strong> </h3>
+    <p><%= article.content %></p>
+    <p><%= link_to 'Show', article_path(article) %> &nbsp; <%= link_to 'Edit', edit_article_path(article)%> &nbsp; <%= link_to 'Delete', article_path(article), method: :delete%></p>
+    <p>&nbsp;</p>
+  <% end %>
+<% else%>
+  <p> You must be logged in to view articles. </p>
 <% end %>
