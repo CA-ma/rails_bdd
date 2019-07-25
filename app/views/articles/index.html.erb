@@ -3,9 +3,10 @@
 <% else %>
   <%= render 'navbar_logged_out'%>
 <% end %>
-<h1>Articles</h1>
-<h3>Find all the latests posts right here.</h3>
-<hr></hr>
+<div class="header">
+  <h1>Articles feed</h1>
+  <h3>Find all the latest articles right here.</h3>
+</div>
 
 <% if user_signed_in?%>
   <% @articles.each do |article| %>

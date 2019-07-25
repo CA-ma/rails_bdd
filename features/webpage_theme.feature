@@ -17,11 +17,11 @@ I want each page to have useful page headers, layouts centered on the screen, an
 
   Scenario: Visit the home page
     Then I should see "Articles feed"
-    And I should see "Find all the latests articles right here."
+    And I should see "Find all the latest articles right here."
 
   Scenario: Make a new post
-    When I click "New Article"
-    Then I should see "Post a new article"
+    When I click "Create"
+    Then I should see "Create and post a new article"
     And I should see "Please use a specific title and include poignant content.  Whatever you like, really!"
 
   Scenario: Show an existing post with comments
