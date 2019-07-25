@@ -11,7 +11,6 @@ img {
 .splash_container {
   background: url(sand_med.jpg);
   background-size: cover;
-  border: rgb(0, 0, 0) solid 1px;
   height: 100vh;
 }
 
