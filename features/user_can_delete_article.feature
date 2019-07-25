@@ -10,14 +10,14 @@ Feature: User can delete article
     And I fill in "Password" with "userpassword"
     And I fill in "Password confirmation" with "userpassword"
     And I click "Sign up"
-    When I click "New Post"
+    When I click "Create"
     And I fill in "Title" with "New article title"
     And I fill in "Content" with "New article content"
     And I click "Create Article"
-    And I click "Home"
+    And I click "Welcome"
 
   Scenario: [Happy path] Create and delete and article
-    When I click "Home"
+    When I click "Welcome"
     And I click "Delete"
     Then I should not see "New article title"
     And I should not see "New article content"

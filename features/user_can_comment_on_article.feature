@@ -10,15 +10,15 @@ Feature: User can comment on article
     And I fill in "Password" with "userpassword"
     And I fill in "Password confirmation" with "userpassword"
     And I click "Sign up"
-    When I click "New Post"
+    When I click "Create"
     And I fill in "Title" with "New article title"
     And I fill in "Content" with "New article content"
     And I click "Create Article"
-    And I click "Home"
+    And I click "Welcome"
 
 
   Scenario: [Happy path] User leaves a comment
-    When I click "Show"
+    When I click "Comments"
     And I fill in "Commenter" with "Mr. Commenter"
     And I fill in "Email" with "commenter@gmail.com"
     And I fill in "Body" with "This is a comment"

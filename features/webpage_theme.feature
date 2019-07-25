@@ -8,7 +8,7 @@ I want each page to have useful page headers, layouts centered on the screen, an
       | title                | content                          |
       | A breaking news item | Some really breaking action      |
     When I visit the landing page
-    And I should see "Home"
+    And I should see "Welcome"
     And I should see "Sign Up"
     And I should see "Login"
     And I should see "An article posting site"
