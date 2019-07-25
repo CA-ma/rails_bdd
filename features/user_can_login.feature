@@ -5,6 +5,9 @@ Feature: User can login and view articles
 
   Background:
     When I visit the landing page
+    And I should see "Home"
+    And I should see "Sign Up"
+    And I should see "Login"
     And I click "Sign Up"
     And I fill in "Email" with "useremail@email.com"
     And I fill in "Password" with "userpassword"
@@ -17,6 +20,9 @@ Feature: User can login and view articles
     And I fill in "Email" with "useremail@email.com"
     And I fill in "Password" with "userpassword"
     And I click "Log in"
+    And I should see "Home"
+    And I should see "New Post"
+    And I should see "Logout"
     And I click "New Post"
     And I fill in "Title" with "This is a title."
     And I fill in "Content" with "This is the content of an article."
