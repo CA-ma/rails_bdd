@@ -11,7 +11,7 @@ I want each page to have useful page headers, layouts centered on the screen, an
     And I should see "Home"
     And I should see "Sign Up"
     And I should see "Login"
-    And I should see "An article posting site for the people"
+    And I should see "An article posting site"
     And I click "Sign Up"
     And I fill in "Email" with "useremail@email.com"
     And I fill in "Password" with "userpassword"
