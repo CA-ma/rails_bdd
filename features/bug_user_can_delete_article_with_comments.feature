@@ -23,3 +23,4 @@ Feature: User can delete an article with comments
     And I click "Create Comment"
     And I click "View"
     And I click "Delete"
+    And I should not see "A breaking news item"
