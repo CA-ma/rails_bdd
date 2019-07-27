@@ -65,9 +65,9 @@ Development is carried out using the BDD flow in a test driven framework.  For e
 * Feature: [User can login](./features/user_can_login.feature).
 * Feature: [Add webpage style theme](./features/webpage_theme.feature).
 * Bug: [User can delete article with comments](./features/bug_user_can_delete_article_with_comments.feature).
-* Feature: Add additional features to webpage style theme.
-* Feature: Add CSS media queries for mobile display.
-* Feature: Add username to user model and display username as author of articles and comments.
+* Planned feature: Add additional features to webpage style theme.
+* Planned feature: Add CSS media queries for mobile display.
+* Planned feature: Add username to user model and display username as author of articles and comments.
 
 ## Testing Example: Bug Fix
 A bug was discovered in the interaction between a series of sequentially added features that had successfully passed `Happy Path` tests, but in combination had created an untested scenario.  First, a feature to delete created articles was added.  Then, articles could be given comments, where Comment was an nested model within Article.  The bug revealed itself when a user was attempting to delete an article that had comments attached to it while the nested comments were not configured to be deleted with the article parent model.
@@ -109,6 +109,3 @@ Rerunning the feature test for the bug confirms that the fix is valid.
 
 ## Acknowledgements
 Thank you to [Craft Academy](https://craftacademy.se/) in Stockholm, Sweden for crafting this challenge.
-
-
-
