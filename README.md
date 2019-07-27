@@ -97,7 +97,7 @@ The instance variables of interest can be investigated in the Pry terminal and t
 **Sanity check - Replicate bug.**
 <img src="./app/assets/images/bug_sanity_check.png">
 
-After extensive searching on the web, often the fix can be found and added to the code base.
+After searching on the web, often the fix can be found and added to the code base.  In this case, it is adding `dependent: :destroy` to the `has_many :comments` entity relationship between `articles` and `comments`.
 
 **Bug Fix - Add new code.**
 <img src="./app/assets/images/article_model_with_fix.png">
@@ -106,8 +106,6 @@ Rerunning the feature test for the bug confirms that the fix is valid.
 
 **Bug Fix - Verify new code.**
 <img src="./app/assets/images/bug_test_pass.png">
-
-
 
 ## Acknowledgements
 Thank you to [Craft Academy](https://craftacademy.se/) in Stockholm, Sweden for crafting this challenge.
