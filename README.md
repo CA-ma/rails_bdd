@@ -67,6 +67,7 @@ Development is carried out using the BDD flow in a test driven framework.  For e
 * Bug: [User can delete article with comments](./features/bug_user_can_delete_article_with_comments.feature).
 * Planned feature: Add additional features to webpage style theme.
 * Planned feature: Add CSS media queries for mobile display.
+* Planned feature: Restrict Edit and Delete article methods to only articles published by user.
 * Planned feature: Add username to user model and display username as author of articles and comments.
 
 ## Testing Example: Bug Fix
