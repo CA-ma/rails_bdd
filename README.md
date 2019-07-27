@@ -72,7 +72,7 @@ Development is carried out using the BDD flow in a test driven framework.  For e
 ## Testing Example: Bug Fix
 A bug was discovered in the interaction between a series of sequentially added features that had successfully passed `Happy Path` tests, but in combination had created an untested scenario.  First, a feature to delete created articles was added.  Then, articles could be given comments, where Comment was an nested model within Article.  The bug revealed itself when a user was attempting to delete an article that had comments attached to it while the nested comments were not configured to be deleted with the article parent model.
 
-The BDD methodology was followed for bug corretion.  A new [branch](https://github.com/CA-ma/rails_bdd/tree/bug_01_user_can_delete_article_with_comments) was created and a new [feature file](./features/bug_user_can_delete_article_with_comments.feature), was generated to show the bug in the user flow.
+The BDD methodology was followed for bug corretion.  A new [branch](https://github.com/CA-ma/rails_bdd/tree/bug_01_user_can_delete_article_with_comments) was created and a new [feature file](./features/bug_user_can_delete_article_with_comments.feature) was generated to show the bug in the user flow and verify the fix.
 
 **Bug - Cannot delete articles with comments.**
 <img src="./app/assets/images/bug_test.png">
