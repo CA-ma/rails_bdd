@@ -71,7 +71,7 @@ Development is carried out using the BDD flow in a test driven framework.  For e
 * Planned feature: Add username to user model and display username as author of articles and comments.
 
 ## Testing Example: Bug Fix
-A bug was discovered in the interaction between a series of sequentially added features that had successfully passed `Happy Path` tests, but in combination had created an untested scenario.  First, a feature to delete created articles was added.  Then, articles could be given comments, where Comment was an nested model within Article.  The bug revealed itself when a user was attempting to delete an article that had comments attached to it while the nested comments were not configured to be deleted with the article parent model.
+A bug was discovered in the interaction between a series of sequentially added features that had successfully passed `Happy Path` tests, but in combination had created an untested scenario.  First, a feature to delete created articles was added.  Then, articles could be given comments, where Comment was an nested model within Article.  The bug revealed itself when a user was attempting to delete an article that had comments attached to it while the nested comments were not configured to be deleted with the parent model, Article.
 
 The BDD methodology was followed for bug corretion.  A new [branch](https://github.com/CA-ma/rails_bdd/tree/bug_01_user_can_delete_article_with_comments) was created and a new [feature file](./features/bug_user_can_delete_article_with_comments.feature) was generated to show the bug in the user flow and verify the fix.
 
@@ -98,7 +98,7 @@ The instance variables of interest can be investigated in the Pry terminal and t
 **Sanity check - Replicate bug.**
 <img src="./app/assets/images/bug_sanity_check.png">
 
-After searching on the web, often the fix can be found and added to the code base.  In this case, it is adding `dependent: :destroy` to the `has_many :comments` entity relationship between `articles` and `comments`.
+The exact nature of the bug is revealed in the error message, `ForeignKeyViolation ERROR: update or delete on table "articles" violates foreign key contraint`...`on table "comments"`.  Being a new developer, often my learning process and debugging process deeply overlap, and the web is an excellent resource for learning.  A well targeted search can reveal many useful insights about the general nature of the problem, as well as specifics to solve it using a particular framework and language.  In this case with Rails, I found a solution by adding `dependent: :destroy` to the `has_many :comments` entity relationship between `Article` and `Comment` models, which is undoubtedly a useful, fundamental attribute in many Rails applications.
 
 **Bug Fix - Add new code.**
 <img src="./app/assets/images/article_model_with_fix.png">
