@@ -13,7 +13,7 @@ This repository contains a [Ruby on Rails](https://rubyonrails.org/) application
 Those of you familiar with Rails will probably recognize the general structure and format of this application from the [Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) guide.  Judging from the number of questions about this application on Stack Overflow, I would say it is one of the Rites of Passage for new Rails developers.  This is my **_go_** of it, with a heavy emphasis on acceptance testing, BDD, and applying each aspect of the Create, Read, Update, and Destroy (CRUD) data management flow in a single type of functionality: the posting of an article.  Included below is also a detailed account of one example of my trouble-shooting flow.
 
 ## Deployment and UI
-[This application](https://rails-articles-demo.herokuapp.com/) is deployed using [Heroku hosting services](https://www.heroku.com/).  Heroku is suitable for hosting a Rails application as it includes a database with the site build.  The persistent storage of a database is required for the articles that are displayed on the page.
+[This application](https://an-article-posting-site.herokuapp.com/) is deployed using [Heroku hosting services](https://www.heroku.com/).  Heroku is suitable for hosting a Rails application as it includes a database with the site build.  The persistent storage of a database is required for the articles that are displayed on the page.
 
 (Picture of app here)
 
